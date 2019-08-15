@@ -123,11 +123,11 @@ a:active {
 color: $if(link_col)$$link_col$$else$$if(accent_colour)$$accent_colour$$else$#cc0000$endif$$endif$;
 }
 .poster_body {
-grid-template-areas: "T T" "P M" "P M" "U U" "S S";
+grid-template-areas: "A A" "B C" "B C" "D D" "E E";
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(5, 1fr);
 display: grid;
-grid-gap: 1.2in;
+grid-gap: $if(grid-gap)$$grid_gap$$else$1.2in$endif;
 padding: 1.2in !important;
 width: 100%;
 height: 100%;
@@ -137,20 +137,33 @@ color: $if(body_textcol)$$body_textcol$$else$#000000$endif$
   
 }
 .section-2 {
-  grid-area: T;
+  grid-area: A;
 }
 .section-3 {
-  grid-area: P;
+  grid-area: B;
 }
 .section-4 {
-  grid-area: M;
+  grid-area: C;
 }
 .section-5 {
-  grid-area: U;
+  grid-area: D;
 }
 .section-6 {
-  grid-area: S;
+  grid-area: E;
 }
+.section-7 {
+  grid-area: F;
+}
+.section-8 {
+  grid-area: G;
+}
+.section-9 {
+  grid-area: H;
+}
+.section-10 {
+  grid-area: I;
+}
+
 
 
 .poster_title h1 {
