@@ -1,0 +1,4 @@
+name: Posterdown HTML gridlayout
+description: >
+ Template for creating R Markdown based PDF via HTML and CSS, using CSS gridlayout
+create_dir: true
