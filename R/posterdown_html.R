@@ -13,6 +13,22 @@ posterdown_html <- function(...,
 	pagedown::poster_relaxed(..., css = css, template = template)
 }
 
+#' Posterdown HTML format via grid layout (using pagedown::poster_relaxed)
+#'
+#' @inheritParams pagedown::poster_relaxed
+#' @param ... Additional arguments to `rmarkdown::html_document`
+#'
+#' @return R Markdown output format to pass to
+#'   [rmarkdown::render()]
+#'
+#' @export
+posterdown_html_gridlayout <- function(...,
+	template = find_resource("posterdown_html_gridlayout", "template.html"),
+	css = NULL) {
+	pagedown::poster_relaxed(..., css = css, template = template)
+}
+
+
 #' @description The output format `poster_betterland()` mimics the style of the
 #' BetterPoster movement from twitter.
 #' @rdname posterdown_html
