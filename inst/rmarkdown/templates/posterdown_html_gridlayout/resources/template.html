@@ -65,6 +65,7 @@ height: $if(poster_height)$$poster_height$$else$38in$endif$;
 padding: 0cm;
 }
 .title_container {
+border-radius: $if(sectitle_boxshape)$$sectitle_boxshape$$else$4mm 0mm$endif$;
 width: $if(poster_width)$$poster_width$$else$45in$endif$;
 height: calc($if(poster_height)$$poster_height$$else$38in$endif$ * 0.15);
 overflow: hidden;
@@ -75,7 +76,7 @@ border: $if(titlebox_borderwidth)$$titlebox_borderwidth$$else$0$endif$ solid $if
 float: left;
 width: 10%;
 height: 100%;
-background-color: $if(primary_colour)$$primary_colour$$else$#0b4545$endif$;
+background-color: #ffffff;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -84,7 +85,7 @@ justify-content: center;
 float: right;
 width: 10%;
 height: 100%;
-background-color: $if(primary_colour)$$primary_colour$$else$#0b4545$endif$;
+background-color: #ffffff;
 display: flex;
 align-items: center;
 justify-content: center;
